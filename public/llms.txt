@@ -1,0 +1,36 @@
+# Jiayang Chen
+
+> Full stack developer based in Houston, Texas. Builds web apps like Authometry, 55GMS, and Lofi Radio.
+
+## About
+
+Jiayang Chen (GitHub: jiayangc1) is a full stack developer based in Houston, Texas, United States, and has worked across frontends and backends, with a few IT infrastructure projects as well. This site is Jiayang's personal portfolio and primary contact point.
+
+## Expertise
+
+- Full stack web development
+- Databases, cloud, and infrastructure
+- OAuth 2.0 and OpenID Connect
+- React, Node.js, Express, TypeScript, JavaScript
+- Python, Swift, PostgreSQL, Cloudflare
+
+## Projects
+
+- Authometry: OAuth you can see — an inspectable OAuth 2.0 and OpenID Connect platform. https://authometry.ch3n.cc
+- 55GMS: Browser games, apps, and web proxy platform with hundreds of playable titles. https://55gms.com
+- Lofi Radio: Lofi music 24/7, synced across browsers. https://lofi.ch3n.cc
+- What Beats Paper?: Try to beat an LLM at guessing what beats the other. https://whatbeatspaper.ch3n.cc
+- Imposter: The Imposter party game on the web, with no ads. https://imposter.ch3n.cc
+- Free GPT: A quick, free way to deploy your own AI chat. https://ai.ch3n.cc
+
+## Links
+
+- Homepage: https://ch3n.cc
+- GitHub: https://github.com/jiayangc1
+- X: https://x.com/jiayang_c
+- Discord: https://discord.com/users/735641273477890178
+- LinkedIn: https://www.linkedin.com/in/cjiayang/
+
+## Contact
+
+Use the contact form on https://ch3n.cc.
