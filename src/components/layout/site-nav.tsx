@@ -1,16 +1,25 @@
 "use client";
 
-import { Command } from "lucide-react";
+import { Command, Menu, Search } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import * as React from "react";
 import { CommandMenu } from "@/components/layout/command-menu";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { site } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 export const SiteNav = () => {
   const pathname = usePathname();
   const [open, setOpen] = React.useState(false);
+  const isActive = (href: string) =>
+    pathname === href || pathname.startsWith(`${href}/`);
 
   return (
     <nav
@@ -23,10 +32,10 @@ export const SiteNav = () => {
       >
         {site.name.full}
       </Link>
-      <div className="flex min-w-0 items-center gap-1">
-        <div className="flex min-w-0 items-center gap-4 overflow-x-auto px-1">
+      <div className="hidden min-w-0 items-center gap-1 sm:flex">
+        <div className="flex min-w-0 items-center gap-4 px-1">
           {site.nav.map(({ label, href }) => {
-            const active = pathname === href || pathname.startsWith(`${href}/`);
+            const active = isActive(href);
             return (
               <Link
                 key={href}
@@ -52,6 +61,43 @@ export const SiteNav = () => {
           <span className="sr-only">Open command menu</span>
         </button>
       </div>
+      <DropdownMenu modal={false}>
+        <DropdownMenuTrigger className="-mr-2 inline-flex size-9 shrink-0 items-center justify-center rounded-md text-foreground/60 transition-colors hover:text-foreground data-[state=open]:text-foreground sm:hidden">
+          <Menu className="size-4" />
+          <span className="sr-only">Open navigation</span>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent
+          align="end"
+          sideOffset={8}
+          className="w-44 font-mono"
+        >
+          {site.nav.map(({ label, href }) => {
+            const active = isActive(href);
+            return (
+              <DropdownMenuItem
+                key={href}
+                asChild
+                className={cn(
+                  "py-2",
+                  active ? "text-foreground" : "text-foreground/60",
+                )}
+              >
+                <Link href={href} aria-current={active ? "page" : undefined}>
+                  {label}
+                </Link>
+              </DropdownMenuItem>
+            );
+          })}
+          <DropdownMenuSeparator />
+          <DropdownMenuItem
+            onSelect={() => setOpen(true)}
+            className="py-2 text-foreground/60"
+          >
+            <Search className="size-3.5" />
+            search
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
       <CommandMenu open={open} onOpenChange={setOpen} />
     </nav>
   );
