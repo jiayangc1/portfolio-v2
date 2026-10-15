@@ -56,11 +56,4 @@ export const site = {
     figure: "/avatar.jpg",
     icon: "/avatar.jpg",
   },
-  status: {
-    timezone: "America/Chicago",
-    timezoneLabel: "Houston",
-    lastfmUsername: "",
-    discordUserId: "735641273477890178",
-    hackatimeApiUrl: "https://hackatime.hackclub.com/api/hackatime/v1",
-  },
 } as const;

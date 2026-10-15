@@ -7,14 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: [
-          "/api/emoji/",
-          "/api/discord/",
-          "/api/tip",
-          "/api/features",
-          "/api/cache/",
-          "/api/status",
-        ],
+        disallow: ["/api/emoji/", "/api/tip"],
       },
       {
         userAgent: [
@@ -28,14 +21,7 @@ export default function robots(): MetadataRoute.Robots {
           "cohere-ai",
         ],
         allow: "/",
-        disallow: [
-          "/api/emoji/",
-          "/api/discord/",
-          "/api/tip",
-          "/api/features",
-          "/api/cache/",
-          "/api/status",
-        ],
+        disallow: ["/api/emoji/", "/api/tip"],
       },
     ],
     sitemap: getCanonicalUrl("/sitemap.xml"),
