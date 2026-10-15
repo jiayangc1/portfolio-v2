@@ -47,6 +47,7 @@ export const site = {
   nav: [
     { label: "about", href: "/about" },
     { label: "projects", href: "/projects" },
+    { label: "uses", href: "/uses" },
   ] as const,
   social: [
     {

@@ -28,6 +28,7 @@ Jiayang Chen (GitHub: jiayangc1) is a full stack developer based in Houston, Tex
 - [Homepage](https://jiayangchen.com)
 - [About](https://jiayangchen.com/about): Bio, current work, GitHub activity, and a project timeline.
 - [Projects](https://jiayangchen.com/projects): Details on each project.
+- [Uses](https://jiayangchen.com/uses): Hardware, software, and services Jiayang uses.
 - [GitHub](https://github.com/jiayangc1)
 - [X](https://x.com/jiayang_c)
 - [Discord](https://discord.com/users/735641273477890178)
