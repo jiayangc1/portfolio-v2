@@ -10,7 +10,8 @@ export const Description = () => {
       label="Bio"
     >
       <p className="text-foreground/80">
-        I&apos;m a <span className="text-foreground">{site.title}</span> based
+        I&apos;m {site.name.full}, a{" "}
+        <span className="text-foreground">{site.title}</span> based
         in{" "}
         <span className="inline-flex items-baseline gap-1 text-foreground">
           {/** biome-ignore lint/performance/noImgElement: img */}

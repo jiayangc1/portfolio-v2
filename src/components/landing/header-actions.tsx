@@ -28,7 +28,7 @@ const SocialIconButtons = () => (
       const Icon = socialIcons[label];
       return (
         <Button key={href} asChild variant="ghost" size="icon">
-          <Link href={href} target="_blank" rel="noopener noreferrer">
+          <Link href={href} target="_blank" rel="me noopener noreferrer">
             <Icon />
             <span className="sr-only">{label}</span>
           </Link>
@@ -67,7 +67,7 @@ const MobileConnectMenu = () => {
                 <Link
                   href={href}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="me noopener noreferrer"
                   onClick={() => setOpen(false)}
                 >
                   <Icon className="size-5 shrink-0" />

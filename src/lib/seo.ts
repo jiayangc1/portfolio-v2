@@ -87,6 +87,12 @@ export function createMetadata({
             "max-video-preview": -1,
           },
         },
+    verification: {
+      google: site.seo.googleVerification,
+      other: site.seo.bingVerification
+        ? { "msvalidate.01": site.seo.bingVerification }
+        : undefined,
+    },
     other: {
       "ai-content-declaration": "human-authored",
     },
@@ -103,6 +109,7 @@ export function createJsonLd() {
       "@id": `${profileUrl}#website`,
       url: profileUrl,
       name: site.name.full,
+      alternateName: [...site.name.alternate, "jiayangchen.com"],
       description: site.seo.description,
       inLanguage: "en-US",
       publisher: { "@id": `${profileUrl}#person` },
@@ -117,6 +124,7 @@ export function createJsonLd() {
       inLanguage: "en-US",
       isPartOf: { "@id": `${profileUrl}#website` },
       mainEntity: { "@id": `${profileUrl}#person` },
+      primaryImageOfPage: { "@id": `${profileUrl}#avatar` },
       dateModified: new Date().toISOString(),
     },
     {
@@ -124,10 +132,20 @@ export function createJsonLd() {
       "@type": "Person",
       "@id": `${profileUrl}#person`,
       name: site.name.full,
+      alternateName: [...site.name.alternate],
       givenName: site.name.first,
       familyName: site.name.last,
       url: profileUrl,
-      image: getCanonicalUrl(site.assets.figure),
+      mainEntityOfPage: { "@id": `${profileUrl}#profilepage` },
+      image: {
+        "@type": "ImageObject",
+        "@id": `${profileUrl}#avatar`,
+        url: getCanonicalUrl(site.assets.figure),
+        contentUrl: getCanonicalUrl(site.assets.figure),
+        width: site.assets.figureSize,
+        height: site.assets.figureSize,
+        caption: `${site.name.full}, ${site.title}`,
+      },
       jobTitle: site.title,
       description: site.seo.tagline,
       homeLocation: {

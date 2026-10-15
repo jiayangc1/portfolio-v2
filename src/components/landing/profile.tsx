@@ -8,6 +8,9 @@ export const Profile = () => {
         alt={`${site.name.full}, ${site.title}`}
         className="h-16 w-14 shrink-0 rounded-xl object-cover sm:h-22 sm:w-18 sm:rounded-2xl"
         src={site.assets.figure}
+        width={site.assets.figureSize}
+        height={site.assets.figureSize}
+        fetchPriority="high"
       />
       <div className="flex min-w-0 flex-col gap-1">
         <h1 className="flex flex-row flex-wrap items-baseline gap-x-2 gap-y-0 tracking-tight">

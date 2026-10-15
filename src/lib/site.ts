@@ -1,7 +1,12 @@
 const fullName = "Jiayang Chen";
 
 export const site = {
-  name: { first: "Jiayang", last: "Chen", full: fullName },
+  name: {
+    first: "Jiayang",
+    last: "Chen",
+    full: fullName,
+    alternate: ["Chen Jiayang", "jiayangc1"],
+  },
   title: "Full Stack Developer",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://jiayangchen.com",
   location: {
@@ -22,6 +27,9 @@ export const site = {
       "jiayangchen.com",
       "55GMS",
       "Jiayang Chen portfolio",
+      "Jiayang Chen developer",
+      "Jiayang Chen Houston",
+      "Jiayang Chen software engineer",
       "full stack developer",
       "full stack developer Houston",
       "software engineer Texas",
@@ -33,6 +41,8 @@ export const site = {
     ],
     locale: "en_US",
     twitterHandle: "@jiayang_c",
+    googleVerification: process.env.GOOGLE_SITE_VERIFICATION,
+    bingVerification: process.env.BING_SITE_VERIFICATION,
   },
   social: [
     {
@@ -54,6 +64,7 @@ export const site = {
   ] as const,
   assets: {
     figure: "/avatar.jpg",
+    figureSize: 800,
     icon: "/avatar.jpg",
   },
 } as const;
