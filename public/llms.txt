@@ -16,24 +16,24 @@ Jiayang Chen (GitHub: jiayangc1) is a full stack developer based in Houston, Tex
 
 ## Projects
 
-- Authometry: OAuth you can see — an inspectable OAuth 2.0 and OpenID Connect platform. https://authometry.jiayangchen.com
-- 55GMS: Browser games, apps, and web proxy platform with hundreds of playable titles. https://55gms.com
-- Lofi Radio: Lofi music 24/7, synced across browsers. https://lofi.jiayangchen.com
-- What Beats Paper?: Try to beat an LLM at guessing what beats the other. https://whatbeatspaper.jiayangchen.com
-- Imposter: The Imposter party game on the web, with no ads. https://imposter.jiayangchen.com
-- Free GPT: A quick, free way to deploy your own AI chat. https://ai.jiayangchen.com
+- [Authometry](https://authometry.jiayangchen.com): OAuth you can see — an inspectable OAuth 2.0 and OpenID Connect platform.
+- [55GMS](https://55gms.com): Browser games, apps, and web proxy platform with hundreds of playable titles.
+- [Lofi Radio](https://lofi.jiayangchen.com): Lofi music 24/7, synced across browsers.
+- [What Beats Paper?](https://whatbeatspaper.jiayangchen.com): Try to beat an LLM at guessing what beats the other.
+- [Imposter](https://imposter.jiayangchen.com): The Imposter party game on the web, with no ads.
+- [Free GPT](https://ai.jiayangchen.com): A quick, free way to deploy your own AI chat.
 
 ## Links
 
-- Homepage: https://jiayangchen.com
-- GitHub: https://github.com/jiayangc1
-- X: https://x.com/jiayang_c
-- Discord: https://discord.com/users/735641273477890178
-- LinkedIn: https://www.linkedin.com/in/cjiayang/
+- [Homepage](https://jiayangchen.com)
+- [GitHub](https://github.com/jiayangc1)
+- [X](https://x.com/jiayang_c)
+- [Discord](https://discord.com/users/735641273477890178)
+- [LinkedIn](https://www.linkedin.com/in/cjiayang/)
 
 ## Photo
 
-- https://jiayangchen.com/avatar.jpg
+- [Photo of Jiayang Chen](https://jiayangchen.com/avatar.jpg)
 
 ## Contact
 
