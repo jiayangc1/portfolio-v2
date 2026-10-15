@@ -12,7 +12,8 @@ const allPosts: Post[] = [
   {
     slug: "hello-world",
     title: "Hello, world",
-    description: "The portfolio grew a few new pages, including this blog.",
+    description:
+      "My portfolio was one page. Now it has an About, Projects, Uses, and this blog.",
     date: "2026-10-15",
   },
 ];
