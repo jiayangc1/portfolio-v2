@@ -11,13 +11,14 @@ export const Description = () => {
     >
       <p className="text-foreground/80">
         I&apos;m {site.name.full}, a{" "}
-        <span className="text-foreground">{site.title}</span> based
-        in{" "}
+        <span className="text-foreground">{site.title}</span> based in{" "}
         <span className="inline-flex items-baseline gap-1 text-foreground">
           {/** biome-ignore lint/performance/noImgElement: img */}
           <img
             src={site.location.flagUrl}
             alt={`${site.location.country} flag`}
+            width={16}
+            height={16}
             className="inline-block h-4 w-4 shrink-0 translate-y-0.5"
           />
           {site.location.label}

@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
   output: "standalone",
   reactCompiler: true,
 
+  experimental: {
+    inlineCss: true,
+  },
+
   async redirects() {
     return [
       {

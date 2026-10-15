@@ -7,9 +7,9 @@ export const Profile = () => {
       <img
         alt={`${site.name.full}, ${site.title}`}
         className="h-16 w-14 shrink-0 rounded-xl object-cover sm:h-22 sm:w-18 sm:rounded-2xl"
-        src={site.assets.figure}
-        width={site.assets.figureSize}
-        height={site.assets.figureSize}
+        src={site.assets.thumbnail}
+        width={site.assets.thumbnailSize}
+        height={site.assets.thumbnailSize}
         fetchPriority="high"
       />
       <div className="flex min-w-0 flex-col gap-1">

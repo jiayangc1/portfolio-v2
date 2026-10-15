@@ -22,15 +22,15 @@ export const TechItem = ({
 }: TechItemProps) => {
   const card = (
     <HoverCard onOpenChange={onOpenChange} openDelay={10} closeDelay={100}>
-      <HoverCardTrigger>
+      <HoverCardTrigger aria-label={name}>
         <TechIcon className={cn(mobileOnly && "md:hidden")}>
-          <Icon className={cn("h-6 w-6 text-foreground", iconClassName)} />
+          <Icon
+            aria-hidden
+            className={cn("h-6 w-6 text-foreground", iconClassName)}
+          />
         </TechIcon>
       </HoverCardTrigger>
-      <HoverCardContent
-        side="top"
-        className="w-max px-3 py-2 text-xs"
-      >
+      <HoverCardContent side="top" className="w-max px-3 py-2 text-xs">
         {name}
       </HoverCardContent>
     </HoverCard>

@@ -13,7 +13,7 @@ export const site = {
     label: "Houston, Texas",
     country: "United States",
     countryCode: "US",
-    flagUrl: "/api/emoji/us",
+    flagUrl: "/flag-us.webp",
   },
   seo: {
     tagline:
@@ -65,6 +65,8 @@ export const site = {
   assets: {
     figure: "/avatar.jpg",
     figureSize: 800,
+    thumbnail: "/avatar-224.webp",
+    thumbnailSize: 224,
     icon: "/avatar.jpg",
   },
 } as const;
