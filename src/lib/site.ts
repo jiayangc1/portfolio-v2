@@ -44,6 +44,7 @@ export const site = {
     googleVerification: process.env.GOOGLE_SITE_VERIFICATION,
     bingVerification: process.env.BING_SITE_VERIFICATION,
   },
+  nav: [{ label: "about", href: "/about" }] as const,
   social: [
     {
       label: "X",

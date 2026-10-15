@@ -1,3 +1,4 @@
+import { SiteNav } from "@/components/layout/site-nav";
 import { cn } from "@/lib/utils";
 
 type SectionPosition = "first" | "middle" | "last" | "single";
@@ -13,6 +14,20 @@ export const PageShell = ({ children }: { children: React.ReactNode }) => {
         <PatternRail className="col-start-3 md:col-start-4" />
       </div>
     </main>
+  );
+};
+
+export const SitePage = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <PageShell>
+      <ContentBox
+        position="first"
+        className="flex h-14 items-end px-6 py-0 pb-3 sm:h-16 sm:px-10 md:h-24"
+      >
+        <SiteNav />
+      </ContentBox>
+      {children}
+    </PageShell>
   );
 };
 
