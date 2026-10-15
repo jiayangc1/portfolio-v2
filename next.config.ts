@@ -6,6 +6,17 @@ const nextConfig: NextConfig = {
 
   output: "standalone",
   reactCompiler: true,
+
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.jiayangchen.com" }],
+        destination: "https://jiayangchen.com/:path*",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default withGTConfig(nextConfig);
