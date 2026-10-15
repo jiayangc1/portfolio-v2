@@ -1,9 +1,14 @@
 import type { MetadataRoute } from "next";
+import { projects } from "@/data/projects";
 import { getCanonicalUrl } from "@/lib/seo";
 import { site } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const pages = ["/", ...site.nav.map((item) => item.href)];
+  const pages = [
+    "/",
+    ...site.nav.map((item) => item.href),
+    ...projects.map((project) => `/projects/${project.slug}`),
+  ];
 
   return pages.map((path) => ({
     url: getCanonicalUrl(path),

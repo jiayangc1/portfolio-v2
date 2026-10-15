@@ -2,9 +2,9 @@
 
 import { useWebHaptics } from "web-haptics/react";
 import { ProjectItem } from "@/components/landing/projects/project-item";
-import { projects } from "@/components/landing/projects/projects-data";
 import { ContentBox } from "@/components/layout/shell";
 import { usePlaySound } from "@/components/ui/sensory-ui/config/use-play-sound";
+import { projects } from "@/data/projects";
 
 export const Projects = () => {
   const { play } = usePlaySound({ sound: "interaction.subtle" });

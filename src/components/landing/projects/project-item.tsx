@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { Project } from "@/components/landing/projects/projects-data";
+import type { Project } from "@/data/projects";
 
 type ProjectItemProps = Project & {
   onInteract: () => void;
