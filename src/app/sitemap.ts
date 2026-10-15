@@ -3,7 +3,7 @@ import { getCanonicalUrl } from "@/lib/seo";
 import { site } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const pages = ["/"];
+  const pages = ["/", ...site.nav.map((item) => item.href)];
 
   return pages.map((path) => ({
     url: getCanonicalUrl(path),
