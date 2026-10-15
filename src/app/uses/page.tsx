@@ -2,6 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Signature } from "@/components/landing/signature";
 import { PageHeader } from "@/components/layout/page-header";
 import { ContentBox, SitePage } from "@/components/layout/shell";
+import { FetchCard } from "@/components/uses/fetch-card";
 import { uses } from "@/data/uses";
 import { createMetadata } from "@/lib/seo";
 import { site } from "@/lib/site";
@@ -19,6 +20,15 @@ export default function UsesPage() {
         title="Uses"
         description="The gear, tools, and services I build with."
       />
+      <ContentBox
+        className="flex flex-col gap-4 px-6 py-6 sm:px-10 sm:py-8"
+        label="Machine"
+      >
+        <h2 className="font-medium font-mono text-foreground text-lg">
+          Machine
+        </h2>
+        <FetchCard />
+      </ContentBox>
       {uses.map(({ title, items }, index) => (
         <ContentBox
           key={title}

@@ -1,6 +1,3 @@
-// TODO(Jiayang): entries marked "Placeholder" need your real gear. The rest
-// were pulled from this repo and your usual stack — double-check them.
-
 export type UsesItem = {
   name: string;
   description?: string;
@@ -12,24 +9,40 @@ export type UsesGroup = {
   items: UsesItem[];
 };
 
+// Rendered as a neofetch-style terminal card.
+export const machine = {
+  user: "jiayang",
+  host: "macbook-pro",
+  specs: [
+    ["OS", "macOS"],
+    ["Host", "MacBook Pro"],
+    ["Chip", "Apple M5"],
+    ["Memory", "24 GB"],
+    ["Disk", "1 TB"],
+    ["Shell", "zsh"],
+    ["Terminal", "iTerm2"],
+    ["Agent", "Claude Code"],
+  ],
+} as const;
+
 export const uses: UsesGroup[] = [
   {
-    title: "Hardware",
+    title: "Tools",
     items: [
-      { name: "Placeholder: computer", description: "Model, chip, memory." },
-      { name: "Placeholder: display" },
-      { name: "Placeholder: keyboard & mouse" },
-    ],
-  },
-  {
-    title: "Editor & Terminal",
-    items: [
-      { name: "Placeholder: editor", description: "Theme and font." },
-      { name: "zsh", description: "Default macOS shell." },
+      {
+        name: "iTerm2",
+        description: "Where everything happens.",
+        href: "https://iterm2.com",
+      },
       {
         name: "Claude Code",
         description: "AI pair programmer in the terminal.",
         href: "https://claude.com/claude-code",
+      },
+      {
+        name: "GitHub CLI",
+        description: "PRs, issues, and the API without leaving the shell.",
+        href: "https://cli.github.com",
       },
     ],
   },
@@ -37,7 +50,10 @@ export const uses: UsesGroup[] = [
     title: "Stack",
     items: [
       { name: "React + Vite", description: "Frontends and SPAs." },
-      { name: "Next.js", description: "This site." },
+      {
+        name: "Next.js",
+        description: "This site, and Authometry's dashboard.",
+      },
       { name: "Node.js + Express", description: "APIs and backends." },
       { name: "PostgreSQL", description: "Default database." },
       { name: "Tailwind CSS", description: "Styling everywhere." },
