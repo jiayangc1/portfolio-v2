@@ -1,10 +1,23 @@
+import { site } from "@/lib/site";
+
+const signatureMask = {
+  maskImage: "url(/signature.png)",
+  WebkitMaskImage: "url(/signature.png)",
+  maskSize: "contain",
+  WebkitMaskSize: "contain",
+  maskRepeat: "no-repeat",
+  WebkitMaskRepeat: "no-repeat",
+  maskPosition: "center",
+  WebkitMaskPosition: "center",
+};
+
 export const Signature = () => {
   return (
-    <p
-      aria-hidden
-      className="mx-auto my-16 w-fit select-none font-bold font-mono text-2xl text-foreground/10 tracking-tighter"
-    >
-      ch3n
-    </p>
+    <div
+      role="img"
+      aria-label={`${site.name.full}'s signature`}
+      className="mx-auto my-16 aspect-242/65 w-44 select-none bg-foreground/20"
+      style={signatureMask}
+    />
   );
 };
