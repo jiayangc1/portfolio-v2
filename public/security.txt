@@ -1,4 +1,4 @@
 Contact: https://github.com/jiayangc1
 Expires: 2027-10-12T00:00:00Z
 Preferred-Languages: en
-Canonical: https://ch3n.cc/security.txt
+Canonical: https://jiayangchen.com/security.txt

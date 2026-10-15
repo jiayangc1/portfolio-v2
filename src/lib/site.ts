@@ -3,7 +3,7 @@ const fullName = "Jiayang Chen";
 export const site = {
   name: { first: "Jiayang", last: "Chen", full: fullName },
   title: "Full Stack Developer",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://ch3n.cc",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://jiayangchen.com",
   location: {
     label: "Houston, Texas",
     country: "United States",
@@ -19,7 +19,7 @@ export const site = {
       "Chen Jiayang",
       "Jiayang",
       "jiayangc1",
-      "ch3n.cc",
+      "jiayangchen.com",
       "55GMS",
       "Jiayang Chen portfolio",
       "full stack developer",

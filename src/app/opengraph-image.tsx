@@ -44,7 +44,7 @@ export default async function Image() {
         </div>
         <div style={{ fontSize: 40, color: "#a1a1aa" }}>{site.title}</div>
         <div style={{ fontSize: 28, color: "#71717a", marginTop: 24 }}>
-          ch3n.cc
+          jiayangchen.com
         </div>
       </div>
     </div>,

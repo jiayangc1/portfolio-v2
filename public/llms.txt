@@ -16,16 +16,16 @@ Jiayang Chen (GitHub: jiayangc1) is a full stack developer based in Houston, Tex
 
 ## Projects
 
-- Authometry: OAuth you can see — an inspectable OAuth 2.0 and OpenID Connect platform. https://authometry.ch3n.cc
+- Authometry: OAuth you can see — an inspectable OAuth 2.0 and OpenID Connect platform. https://authometry.jiayangchen.com
 - 55GMS: Browser games, apps, and web proxy platform with hundreds of playable titles. https://55gms.com
-- Lofi Radio: Lofi music 24/7, synced across browsers. https://lofi.ch3n.cc
-- What Beats Paper?: Try to beat an LLM at guessing what beats the other. https://whatbeatspaper.ch3n.cc
-- Imposter: The Imposter party game on the web, with no ads. https://imposter.ch3n.cc
-- Free GPT: A quick, free way to deploy your own AI chat. https://ai.ch3n.cc
+- Lofi Radio: Lofi music 24/7, synced across browsers. https://lofi.jiayangchen.com
+- What Beats Paper?: Try to beat an LLM at guessing what beats the other. https://whatbeatspaper.jiayangchen.com
+- Imposter: The Imposter party game on the web, with no ads. https://imposter.jiayangchen.com
+- Free GPT: A quick, free way to deploy your own AI chat. https://ai.jiayangchen.com
 
 ## Links
 
-- Homepage: https://ch3n.cc
+- Homepage: https://jiayangchen.com
 - GitHub: https://github.com/jiayangc1
 - X: https://x.com/jiayang_c
 - Discord: https://discord.com/users/735641273477890178
@@ -33,4 +33,4 @@ Jiayang Chen (GitHub: jiayangc1) is a full stack developer based in Houston, Tex
 
 ## Contact
 
-Use the contact form on https://ch3n.cc.
+Use the contact form on https://jiayangchen.com.

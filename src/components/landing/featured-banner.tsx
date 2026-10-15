@@ -8,7 +8,7 @@ export const FeaturedBanner = () => {
   return (
     <ContentBox className="relative overflow-hidden p-0" position="middle">
       <Link
-        href="https://authometry.ch3n.cc"
+        href="https://authometry.jiayangchen.com"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Check out Authometry"

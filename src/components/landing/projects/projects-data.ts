@@ -20,7 +20,7 @@ export const projects: Project[] = [
     name: "Authometry",
     description:
       "OAuth you can see — an inspectable OAuth 2.0 and OpenID Connect platform.",
-    href: "https://authometry.ch3n.cc",
+    href: "https://authometry.jiayangchen.com",
     Icon: ShieldCheck,
   },
   {
@@ -33,26 +33,26 @@ export const projects: Project[] = [
   {
     name: "Lofi Radio",
     description: "Listen to lofi 24/7, synced across every browser.",
-    href: "https://lofi.ch3n.cc",
+    href: "https://lofi.jiayangchen.com",
     Icon: Radio,
   },
   {
     name: "What Beats Paper?",
     description: "Try to beat an LLM at guessing what beats the other.",
-    href: "https://whatbeatspaper.ch3n.cc",
+    href: "https://whatbeatspaper.jiayangchen.com",
     Icon: Scissors,
   },
   {
     name: "Imposter",
     description:
       "The Imposter party game on the web, with no ads and a clean UI.",
-    href: "https://imposter.ch3n.cc",
+    href: "https://imposter.jiayangchen.com",
     Icon: VenetianMask,
   },
   {
     name: "Free GPT",
     description: "A quick, free way to deploy your own AI chat.",
-    href: "https://ai.ch3n.cc",
+    href: "https://ai.jiayangchen.com",
     Icon: BotMessageSquare,
   },
 ];
