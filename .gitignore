@@ -25,8 +25,3 @@ bun-debug.log*
 
 # typescript
 *.tsbuildinfo
-
-# cloudflare
-.open-next
-.wrangler
-.dev.vars*
