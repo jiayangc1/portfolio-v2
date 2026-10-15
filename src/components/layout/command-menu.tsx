@@ -4,6 +4,7 @@ import { ArrowUpRight, FileText, Home } from "lucide-react";
 import { useRouter } from "next/navigation";
 import * as React from "react";
 import {
+  Command,
   CommandDialog,
   CommandEmpty,
   CommandGroup,
@@ -47,36 +48,38 @@ export const CommandMenu = ({
       title="Navigate"
       description="Jump to a page or find me around the web."
     >
-      <CommandInput placeholder="Where to?" />
-      <CommandList>
-        <CommandEmpty>Nothing found.</CommandEmpty>
-        <CommandGroup heading="Pages">
-          {pages.map(({ label, href }) => (
-            <CommandItem
-              key={href}
-              value={label}
-              onSelect={() => run(() => router.push(href))}
-            >
-              {href === "/" ? <Home /> : <FileText />}
-              <span className="capitalize">{label}</span>
-            </CommandItem>
-          ))}
-        </CommandGroup>
-        <CommandGroup heading="Connect">
-          {site.social.map(({ label, href }) => (
-            <CommandItem
-              key={href}
-              value={label}
-              onSelect={() =>
-                run(() => window.open(href, "_blank", "noopener,noreferrer"))
-              }
-            >
-              <ArrowUpRight />
-              {label}
-            </CommandItem>
-          ))}
-        </CommandGroup>
-      </CommandList>
+      <Command>
+        <CommandInput placeholder="Where to?" />
+        <CommandList>
+          <CommandEmpty>Nothing found.</CommandEmpty>
+          <CommandGroup heading="Pages">
+            {pages.map(({ label, href }) => (
+              <CommandItem
+                key={href}
+                value={label}
+                onSelect={() => run(() => router.push(href))}
+              >
+                {href === "/" ? <Home /> : <FileText />}
+                <span className="capitalize">{label}</span>
+              </CommandItem>
+            ))}
+          </CommandGroup>
+          <CommandGroup heading="Connect">
+            {site.social.map(({ label, href }) => (
+              <CommandItem
+                key={href}
+                value={label}
+                onSelect={() =>
+                  run(() => window.open(href, "_blank", "noopener,noreferrer"))
+                }
+              >
+                <ArrowUpRight />
+                {label}
+              </CommandItem>
+            ))}
+          </CommandGroup>
+        </CommandList>
+      </Command>
     </CommandDialog>
   );
 };
