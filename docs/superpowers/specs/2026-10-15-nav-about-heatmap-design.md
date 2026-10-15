@@ -125,10 +125,11 @@ Components live in `src/components/about/` (`bio.tsx`, `now.tsx`,
   padded so the first column starts on Sunday. Cell color = `level` mapped to
   5 foreground opacities (`foreground/5`, `/20`, `/40`, `/65`, `/90`). Month
   labels above, a small Less→More legend below.
-- Tooltip on hover/focus using the existing shadcn `tooltip`:
-  "12 contributions on Mar 4, 2026" (singular for 1, "No contributions" for 0).
-  To keep it light, a single shared tooltip/`title` approach is acceptable if
-  365 Radix tooltips proves heavy; decide during implementation.
+- Tooltip on hover: "12 contributions on Mar 4, 2026" (singular for 1, "No
+  contributions" for 0). Implemented as one shared, absolutely positioned
+  tooltip in a client component that tracks the hovered cell via event
+  delegation on the grid (not 365 Radix tooltip instances). Styled to match
+  the shadcn tooltip.
 - Narrow screens: the grid scrolls horizontally inside its box
   (`overflow-x-auto`), scrolled to the most recent week on mount.
 - Accessibility: grid has `role="img"` and an `aria-label` summarizing the
