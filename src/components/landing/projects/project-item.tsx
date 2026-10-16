@@ -1,21 +1,10 @@
 import Link from "next/link";
 import type { Project } from "@/data/projects";
 
-type ProjectItemProps = Project & {
-  onInteract: () => void;
-};
-
-export const ProjectItem = ({
-  slug,
-  name,
-  description,
-  Icon,
-  onInteract,
-}: ProjectItemProps) => {
+export const ProjectItem = ({ slug, name, description, Icon }: Project) => {
   return (
     <Link
       href={`/projects/${slug}`}
-      onMouseEnter={onInteract}
       className="group flex gap-3 bg-background px-5 py-5 transition-colors hover:bg-[color-mix(in_oklab,var(--foreground)_5%,var(--background))] sm:px-6 sm:py-6"
     >
       <Icon

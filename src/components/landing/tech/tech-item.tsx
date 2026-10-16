@@ -9,19 +9,14 @@ import {
 } from "@/components/ui/hover-card";
 import { cn } from "@/lib/utils";
 
-type TechItemProps = TechStackItem & {
-  onOpenChange: (open: boolean) => void;
-};
-
 export const TechItem = ({
   name,
   Icon,
   iconClassName,
   mobileOnly,
-  onOpenChange,
-}: TechItemProps) => {
+}: TechStackItem) => {
   const card = (
-    <HoverCard onOpenChange={onOpenChange} openDelay={10} closeDelay={100}>
+    <HoverCard openDelay={10} closeDelay={100}>
       <HoverCardTrigger aria-label={name}>
         <TechIcon className={cn(mobileOnly && "md:hidden")}>
           <Icon
