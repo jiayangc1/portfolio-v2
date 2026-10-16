@@ -157,7 +157,7 @@
   inset: -12%;
   transform: scale(1);
   transform-origin: center;
-  background-image: radial-gradient(circle, #5bf65b 1.25px, transparent 1.25px);
+  background-image: radial-gradient(circle, #ccf24a 1.25px, transparent 1.25px);
   background-position: center;
   background-size: 6px 6px;
   transition:

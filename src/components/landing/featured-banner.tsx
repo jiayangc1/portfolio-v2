@@ -2,7 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { ContentBox } from "@/components/layout/shell";
 
-const FEATURED_ACCENT = "#5BF65B";
+const FEATURED_ACCENT = "#CCF24A";
 
 export const FeaturedBanner = () => {
   return (
