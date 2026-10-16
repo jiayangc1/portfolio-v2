@@ -2,6 +2,7 @@ import {
   BotMessageSquare,
   Gamepad2,
   type LucideIcon,
+  PiggyBank,
   Radio,
   Scissors,
   ShieldCheck,
@@ -80,6 +81,21 @@ export const projects: Project[] = [
     source: "https://github.com/55gms/55GMS",
   },
   {
+    slug: "home-economy",
+    featured: true,
+    name: "Home Economy",
+    description:
+      "A finance app for families: pay each other, track transactions, and verify cash.",
+    href: "https://github.com/Home-Economy/home-economy",
+    Icon: PiggyBank,
+    year: "2024",
+    overview: [
+      "Home Economy is a web app for running a household economy. Family members get a profile, a list of their transactions, and J-Pay for sending money to each other.",
+      "A cash check screen verifies physical cash, and a companion POS system handles purchases.",
+    ],
+    stack: ["HTML", "CSS", "JavaScript"],
+  },
+  {
     slug: "lofi-radio",
     featured: true,
     name: "Lofi Radio",
@@ -96,7 +112,6 @@ export const projects: Project[] = [
   },
   {
     slug: "what-beats-paper",
-    featured: true,
     name: "What Beats Paper?",
     description: "Try to beat an LLM at guessing what beats the other.",
     href: "https://whatbeatspaper.jiayangchen.com",

@@ -9,7 +9,7 @@ import { site } from "@/lib/site";
 
 export const metadata = createMetadata({
   title: "Projects",
-  description: `Web apps built by ${site.name.full}, including Authometry, 55GMS, Lofi Radio, and What Beats Paper.`,
+  description: `Web apps built by ${site.name.full}, including Authometry, 55GMS, Home Economy, and Lofi Radio.`,
   path: "/projects",
 });
 
