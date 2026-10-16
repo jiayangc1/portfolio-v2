@@ -1,8 +1,11 @@
 import {
   BotMessageSquare,
+  Clapperboard,
   Gamepad2,
   type LucideIcon,
+  Megaphone,
   PiggyBank,
+  QrCode,
   Radio,
   Scissors,
   ShieldCheck,
@@ -63,6 +66,16 @@ export const projects: Project[] = [
       "MCP",
     ],
     source: "https://github.com/jiayangc1/authometry",
+    screenshots: [
+      {
+        src: "/projects/authometry/home.webp",
+        alt: "Authometry landing page with an interactive authorization trace",
+      },
+      {
+        src: "/projects/authometry/docs.webp",
+        alt: "Authometry documentation index",
+      },
+    ],
   },
   {
     slug: "55gms",
@@ -79,6 +92,20 @@ export const projects: Project[] = [
     ],
     stack: ["JavaScript", "Node.js", "HTML", "CSS", "Web proxy"],
     source: "https://github.com/55gms/55GMS",
+    screenshots: [
+      {
+        src: "/projects/55gms/home.webp",
+        alt: "55GMS home page with search bar and quick links",
+      },
+      {
+        src: "/projects/55gms/games.webp",
+        alt: "55GMS games library grid",
+      },
+      {
+        src: "/projects/55gms/apps.webp",
+        alt: "55GMS apps library grid",
+      },
+    ],
   },
   {
     slug: "home-economy",
@@ -94,6 +121,27 @@ export const projects: Project[] = [
       "A cash check screen verifies physical cash, and a companion POS system handles purchases.",
     ],
     stack: ["HTML", "CSS", "JavaScript"],
+    screenshots: [
+      {
+        src: "/projects/home-economy/home.webp",
+        alt: "Home Economy home screen showing the account balance",
+        caption: "Shown with demo data",
+      },
+      {
+        src: "/projects/home-economy/transactions.webp",
+        alt: "Home Economy transactions table",
+        caption: "Shown with demo data",
+      },
+      {
+        src: "/projects/home-economy/jpay.webp",
+        alt: "J-Pay screen for sending money to a family member",
+      },
+      {
+        src: "/projects/home-economy/profile.webp",
+        alt: "Home Economy profile with card details",
+        caption: "Shown with demo data",
+      },
+    ],
   },
   {
     slug: "lofi-radio",
@@ -109,6 +157,12 @@ export const projects: Project[] = [
     ],
     stack: ["HTML", "CSS", "JavaScript"],
     source: "https://github.com/jiayangc1/lofi-radio",
+    screenshots: [
+      {
+        src: "/projects/lofi-radio/player.webp",
+        alt: "Lofi Radio player showing the current track and listener count",
+      },
+    ],
   },
   {
     slug: "what-beats-paper",
@@ -123,6 +177,12 @@ export const projects: Project[] = [
     ],
     stack: ["HTML", "CSS", "JavaScript", "Llama 3.2", "Groq"],
     source: "https://github.com/jiayangc1/whatbeatspaper",
+    screenshots: [
+      {
+        src: "/projects/what-beats-paper/home.webp",
+        alt: "What Beats Paper? prompt with an answer box",
+      },
+    ],
   },
   {
     slug: "imposter",
@@ -145,6 +205,20 @@ export const projects: Project[] = [
       "tsParticles",
     ],
     source: "https://github.com/jiayangc1/Imposter",
+    screenshots: [
+      {
+        src: "/projects/imposter/home.webp",
+        alt: "Imposter start screen",
+      },
+      {
+        src: "/projects/imposter/how-to-play.webp",
+        alt: "Imposter how-to-play rules",
+      },
+      {
+        src: "/projects/imposter/setup.webp",
+        alt: "Imposter game settings for players, imposters, and categories",
+      },
+    ],
   },
   {
     slug: "free-gpt",
@@ -159,6 +233,96 @@ export const projects: Project[] = [
     ],
     stack: ["HTML", "CSS", "JavaScript", "Llama", "Groq"],
     source: "https://github.com/jiayangc1/free-gpt",
+    screenshots: [
+      {
+        src: "/projects/free-gpt/home.webp",
+        alt: "Free GPT chat screen with suggested prompts",
+      },
+    ],
+  },
+  {
+    slug: "gms-ads",
+    name: "GMS Ads",
+    description:
+      "A self-hosted ad server and dashboard serving ads across every 55GMS domain.",
+    href: "https://ads.ch3n.cc",
+    Icon: Megaphone,
+    year: "2026",
+    overview: [
+      "GMS Ads is the ad server and ad manager behind 55GMS. One script tag in the shared site template serves correctly sized ads on every 55GMS domain.",
+      "Admins sign in with Authometry, upload creatives, run several weighted campaigns at once, and see impressions, clicks, CTR, and per-domain breakdowns. Browsers never talk to the ad server directly: an edge module on the 55GMS server serves from a cached manifest and reports stats back in hourly batches.",
+    ],
+    stack: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Express",
+      "PostgreSQL",
+      "Docker",
+      "Authometry",
+    ],
+    source: "https://github.com/55gms/gms-ads",
+    screenshots: [
+      {
+        src: "/projects/gms-ads/overview.webp",
+        alt: "GMS Ads overview with impressions, clicks, and CTR",
+      },
+      {
+        src: "/projects/gms-ads/campaigns.webp",
+        alt: "GMS Ads campaigns table with weights and traffic share",
+      },
+      {
+        src: "/projects/gms-ads/creatives.webp",
+        alt: "GMS Ads creatives grouped by ad size",
+      },
+    ],
+  },
+  {
+    slug: "gms-movies",
+    name: "GMS Movies",
+    description: "Watch movies, TV shows, and anime for free, without ads.",
+    href: "https://movies.ch3n.cc",
+    Icon: Clapperboard,
+    year: "2024",
+    overview: [
+      "GMS Movies is a fast, clean way to find and watch movies and TV shows. It pulls trending and top-rated titles from TMDB and lets you search for anything else.",
+      "It ships as part of 55GMS as its Media section.",
+    ],
+    stack: ["HTML", "CSS", "JavaScript", "TMDB API"],
+    source: "https://github.com/jiayangc1/gms-movies",
+    screenshots: [
+      {
+        src: "/projects/gms-movies/home.webp",
+        alt: "GMS Movies home page with search and trending titles",
+      },
+      {
+        src: "/projects/gms-movies/movies.webp",
+        alt: "GMS Movies top movies grid",
+      },
+      {
+        src: "/projects/gms-movies/tv.webp",
+        alt: "GMS Movies top TV shows grid",
+      },
+    ],
+  },
+  {
+    slug: "quick-qr",
+    name: "Quick QR",
+    description: "A no-BS QR code generator.",
+    href: "https://qr.ch3n.cc",
+    Icon: QrCode,
+    year: "2024",
+    overview: [
+      "Type a link or any text and get a QR code instantly, with buttons to download it or copy it to the clipboard. No sign-up, no tracking, no watermark.",
+    ],
+    stack: ["HTML", "CSS", "JavaScript"],
+    source: "https://github.com/jiayangc1/quick-qr",
+    screenshots: [
+      {
+        src: "/projects/quick-qr/home.webp",
+        alt: "Quick QR generating a QR code for a URL",
+      },
+    ],
   },
 ];
 
