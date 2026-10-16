@@ -27,10 +27,9 @@ export const Description = () => {
       </p>
       <p className="text-foreground/80">
         <T>
-          I&apos;ve worked across frontends and backends, with a few IT
-          infrastructure projects as well. I build web apps like Authometry, an
-          inspectable OAuth platform; 55GMS, a browser games and web proxy
-          platform; and Lofi Radio, a synced 24/7 stream.
+          I build web apps like Authometry, an inspectable OAuth platform;
+          55GMS, a browser games and web proxy platform; and Home Economy, a
+          finance app for families.
         </T>
       </p>
     </ContentBox>

@@ -12,17 +12,6 @@ const nextConfig: NextConfig = {
   experimental: {
     inlineCss: true,
   },
-
-  async redirects() {
-    return [
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: "www.jiayangchen.com" }],
-        destination: "https://jiayangchen.com/:path*",
-        permanent: true,
-      },
-    ];
-  },
 };
 
 const withMDX = createMDX();
