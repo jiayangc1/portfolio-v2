@@ -7,6 +7,8 @@ import { Prose } from "@/components/content/prose";
 import { Signature } from "@/components/landing/signature";
 import { PageHeader } from "@/components/layout/page-header";
 import { ContentBox, SitePage } from "@/components/layout/shell";
+import { ScreenshotGallery } from "@/components/projects/screenshot-gallery";
+import { StackList } from "@/components/projects/stack-list";
 import { Button } from "@/components/ui/button";
 import { getProject, projects } from "@/data/projects";
 import { createMetadata } from "@/lib/seo";
@@ -39,8 +41,17 @@ export default async function ProjectPage({
   const project = getProject(slug);
   if (!project) notFound();
 
-  const { name, description, href, Icon, year, overview, stack, source } =
-    project;
+  const {
+    name,
+    description,
+    href,
+    Icon,
+    year,
+    overview,
+    stack,
+    source,
+    screenshots,
+  } = project;
 
   return (
     <SitePage>
@@ -78,6 +89,12 @@ export default async function ProjectPage({
         ) : null}
       </ContentBox>
 
+      {screenshots?.length ? (
+        <ContentBox className={sectionClassName} label="Screenshots">
+          <ScreenshotGallery screenshots={screenshots} />
+        </ContentBox>
+      ) : null}
+
       {overview?.length ? (
         <ContentBox className={sectionClassName} label="Overview">
           <Prose>
@@ -90,16 +107,7 @@ export default async function ProjectPage({
 
       {stack?.length ? (
         <ContentBox className={sectionClassName} label="Stack">
-          <ul className="flex flex-wrap gap-2">
-            {stack.map((item) => (
-              <li
-                key={item}
-                className="rounded-md border border-foreground/10 bg-foreground/5 px-2 py-0.5 font-mono text-foreground/80 text-xs"
-              >
-                {item}
-              </li>
-            ))}
-          </ul>
+          <StackList stack={stack} />
         </ContentBox>
       ) : null}
 
