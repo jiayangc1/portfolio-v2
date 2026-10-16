@@ -1,3 +1,5 @@
+"use client";
+
 import { TechItem } from "@/components/landing/tech/tech-item";
 import { techStack } from "@/components/landing/tech/tech-stack";
 import { ContentBox } from "@/components/layout/shell";
