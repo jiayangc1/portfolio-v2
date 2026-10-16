@@ -6,17 +6,15 @@ type ProjectItemProps = Project & {
 };
 
 export const ProjectItem = ({
+  slug,
   name,
   description,
-  href,
   Icon,
   onInteract,
 }: ProjectItemProps) => {
   return (
     <Link
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
+      href={`/projects/${slug}`}
       onMouseEnter={onInteract}
       className="group flex gap-3 bg-background px-5 py-5 transition-colors hover:bg-[color-mix(in_oklab,var(--foreground)_5%,var(--background))] sm:px-6 sm:py-6"
     >

@@ -8,8 +8,20 @@ import {
   VenetianMask,
 } from "lucide-react";
 
-// Optional fields (`year`, `overview`, `stack`, `source`) are hidden on the
-// project page when empty.
+// Optional fields (`year`, `overview`, `stack`, `source`, `screenshots`) are
+// hidden on the project page when empty.
+//
+// `featured` projects (aim for ~4) are shown on the landing page and at the
+// top of /projects; everything else is listed under "More" on /projects.
+//
+// Screenshots live in `public/projects/<slug>/` and are referenced by their
+// public path, e.g. `/projects/authometry/dashboard.png`.
+
+export type ProjectScreenshot = {
+  src: string;
+  alt: string;
+  caption?: string;
+};
 
 export type Project = {
   slug: string;
@@ -21,11 +33,14 @@ export type Project = {
   overview?: string[];
   stack?: string[];
   source?: string;
+  featured?: boolean;
+  screenshots?: ProjectScreenshot[];
 };
 
 export const projects: Project[] = [
   {
     slug: "authometry",
+    featured: true,
     name: "Authometry",
     description:
       "OAuth you can see — an inspectable OAuth 2.0 and OpenID Connect platform.",
@@ -50,6 +65,7 @@ export const projects: Project[] = [
   },
   {
     slug: "55gms",
+    featured: true,
     name: "55GMS",
     description:
       "Browser games, apps, and web proxy platform with hundreds of playable titles.",
@@ -65,6 +81,7 @@ export const projects: Project[] = [
   },
   {
     slug: "lofi-radio",
+    featured: true,
     name: "Lofi Radio",
     description: "Listen to lofi 24/7, synced across every browser.",
     href: "https://lofi.jiayangchen.com",
@@ -79,6 +96,7 @@ export const projects: Project[] = [
   },
   {
     slug: "what-beats-paper",
+    featured: true,
     name: "What Beats Paper?",
     description: "Try to beat an LLM at guessing what beats the other.",
     href: "https://whatbeatspaper.jiayangchen.com",
@@ -128,6 +146,10 @@ export const projects: Project[] = [
     source: "https://github.com/jiayangc1/free-gpt",
   },
 ];
+
+export const featuredProjects = projects.filter((project) => project.featured);
+
+export const otherProjects = projects.filter((project) => !project.featured);
 
 export const getProject = (slug: string) =>
   projects.find((project) => project.slug === slug);
