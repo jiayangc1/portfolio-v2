@@ -27,6 +27,9 @@ export function proxy(req: NextRequest) {
   return NextResponse.next();
 }
 
+// Skip files with an extension (public assets). `/_next/image` fetches them
+// through an internal request whose `x-forwarded-proto` defaults to "http",
+// so the HTTPS redirect above would hand the optimizer a 308 instead of bytes.
 export const config = {
-  matcher: ["/((?!_next/static|_next/image).*)"],
+  matcher: ["/((?!_next/static|_next/image|.*\\.[^/]+$).*)"],
 };
