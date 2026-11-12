@@ -26,6 +26,20 @@ export const about = {
   // Newest first.
   timeline: [
     {
+      date: "Nov 2026",
+      title: "Shipped Dial",
+      description:
+        "A class-aware to-do app on top of Notion that opens the class you're in right now.",
+      href: "https://dial.lsjc.dev",
+    },
+    {
+      date: "Oct 2026",
+      title: "Launched Ostra",
+      description:
+        "Every inbox, one place: a fast, keyboard-first email client for all your accounts.",
+      href: "https://ostramail.com",
+    },
+    {
       date: "Aug 2026",
       title: "Solutions Engineer at a stealth AI startup",
       description: "Full-time, on-site in Houston.",

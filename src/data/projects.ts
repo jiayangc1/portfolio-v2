@@ -2,6 +2,8 @@ import {
   BotMessageSquare,
   Clapperboard,
   Gamepad2,
+  Inbox,
+  ListChecks,
   type LucideIcon,
   Megaphone,
   PiggyBank,
@@ -161,6 +163,78 @@ export const projects: Project[] = [
       {
         src: "/projects/lofi-radio/player.webp",
         alt: "Lofi Radio player showing the current track and listener count",
+      },
+    ],
+  },
+  {
+    slug: "ostra",
+    name: "Ostra",
+    description:
+      "Every inbox, one place: a fast, keyboard-first email client for all your accounts.",
+    href: "https://ostramail.com",
+    Icon: Inbox,
+    year: "2026",
+    overview: [
+      "Ostra merges every email account you own (Gmail, Outlook, any IMAP host, and custom domains through Resend) into one fast, keyboard-first inbox. Mail from real people stays on top, while newsletters, notifications, and promotions fold into a single row each.",
+      "Replies go out from the address the mail was sent to, a suggested reply in your voice waits under every conversation, and a pre-send check catches a missing attachment or the wrong account. AI can be switched off per account or per label, and changes sync both ways with the original mailbox.",
+      "Passwords, tokens, and message bodies are encrypted at rest. It runs in the browser today, with a Tauri desktop app on the way.",
+    ],
+    stack: [
+      "TypeScript",
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Hono",
+      "PostgreSQL",
+      "Drizzle",
+      "Tauri",
+      "Astro",
+      "Claude",
+    ],
+    source: "https://github.com/jiayangc1/ostra",
+    screenshots: [
+      {
+        src: "/projects/ostra/home.webp",
+        alt: "Ostra landing page showing three accounts merging into one inbox",
+      },
+    ],
+  },
+  {
+    slug: "dial",
+    name: "Dial",
+    description:
+      "A class-aware to-do app on top of Notion that opens the class you're in right now.",
+    href: "https://dial.lsjc.dev",
+    Icon: ListChecks,
+    year: "2026",
+    overview: [
+      "Dial checks your bell schedule, works out which class you're in, and opens that class's tasks. Tasks live in your existing Notion databases: Dial reads and writes them there and keeps no copy of its own.",
+      "A quick-add box parses plain text like \"ws 2.4 fri 30m\" into a due date, time estimate, type, and priority. Swipe to complete or reschedule, use the keyboard to jump between classes, and keep working offline with changes queued until you reconnect.",
+    ],
+    stack: [
+      "TypeScript",
+      "Next.js",
+      "Tailwind CSS",
+      "Motion",
+      "Auth.js",
+      "Notion API",
+      "Docker",
+    ],
+    source: "https://github.com/jiayangc1/dial",
+    screenshots: [
+      {
+        src: "/projects/dial/class.webp",
+        alt: "Dial showing Pre-Calc tasks with 29 minutes left in class",
+        caption: "Shown with demo data",
+      },
+      {
+        src: "/projects/dial/quick-add.webp",
+        alt: "Dial quick-add parsing a task into due date, time, and priority chips",
+        caption: "Shown with demo data",
+      },
+      {
+        src: "/projects/dial/sign-in.webp",
+        alt: "Dial sign-in screen with Continue with Notion",
       },
     ],
   },
