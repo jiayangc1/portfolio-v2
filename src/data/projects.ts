@@ -146,28 +146,8 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "lofi-radio",
-    featured: true,
-    name: "Lofi Radio",
-    description: "Listen to lofi 24/7, synced across every browser.",
-    href: "https://lofi.jiayangchen.com",
-    Icon: Radio,
-    year: "2024",
-    overview: [
-      "A player that broadcasts lofi 24/7. It's synced, so everyone listening hears the same song at the same moment, driven by a playlist on the backend.",
-      "Built for Hack Club's High Seas.",
-    ],
-    stack: ["HTML", "CSS", "JavaScript"],
-    source: "https://github.com/jiayangc1/lofi-radio",
-    screenshots: [
-      {
-        src: "/projects/lofi-radio/player.webp",
-        alt: "Lofi Radio player showing the current track and listener count",
-      },
-    ],
-  },
-  {
     slug: "ostra",
+    featured: true,
     name: "Ostra",
     description:
       "Every inbox, one place: a fast, keyboard-first email client for all your accounts.",
@@ -235,6 +215,26 @@ export const projects: Project[] = [
       {
         src: "/projects/dial/sign-in.webp",
         alt: "Dial sign-in screen with Continue with Notion",
+      },
+    ],
+  },
+  {
+    slug: "lofi-radio",
+    name: "Lofi Radio",
+    description: "Listen to lofi 24/7, synced across every browser.",
+    href: "https://lofi.jiayangchen.com",
+    Icon: Radio,
+    year: "2024",
+    overview: [
+      "A player that broadcasts lofi 24/7. It's synced, so everyone listening hears the same song at the same moment, driven by a playlist on the backend.",
+      "Built for Hack Club's High Seas.",
+    ],
+    stack: ["HTML", "CSS", "JavaScript"],
+    source: "https://github.com/jiayangc1/lofi-radio",
+    screenshots: [
+      {
+        src: "/projects/lofi-radio/player.webp",
+        alt: "Lofi Radio player showing the current track and listener count",
       },
     ],
   },
